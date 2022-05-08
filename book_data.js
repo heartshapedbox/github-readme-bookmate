@@ -29,11 +29,13 @@ var bookAuthor = document.querySelector('.author_container');
 var bookExcerption = document.querySelector('.text_container');
 var bookProgress = document.querySelector('.progress_container');
 var bookCover = document.querySelector('.cover_container');
+var quote = document.querySelector('.quote');
 var img = document.createElement("img");
 img.src = bookData["Cover"];
 
 bookTitle.textContent = bookData["Title"];
 bookAuthor.textContent = (`by ${bookData["Author"]}`);
 bookProgress.textContent = bookData["Progress"];
-bookExcerption.textContent = bookData["Excerption"];
+bookExcerption.textContent = (`\xa0\xa0\xa0\xa0\xa0\ ${bookData["Excerption"]}`);
+quote.textContent = "”";
 bookCover.appendChild(img);
