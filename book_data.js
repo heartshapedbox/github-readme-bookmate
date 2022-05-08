@@ -1,7 +1,3 @@
-// "https://bookmate.com/@babenkodmitry/books/all"
-
-const input = prompt("URL: ");
-
 const container = document.getElementsByClassName("book book_grid  book_88")[0];
 const status = container.querySelector("span").innerText;
 const cover = container.querySelector("img").getAttribute("src");
