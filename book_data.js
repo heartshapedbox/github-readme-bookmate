@@ -12,6 +12,8 @@ for (var i = 0; i < headers.length; i++) {
   bookData[headers[i]] = bookAttributes[i]
 };
 
+console.log(bookData)
+
 var bookTitle = document.querySelector('.header_container');
 var bookAuthor = document.querySelector('.author_container');
 var bookExcerption = document.querySelector('.author_container');
