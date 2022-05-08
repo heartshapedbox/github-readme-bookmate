@@ -1,16 +1,23 @@
 body {
   background-color: #0d1117;
+  margin-left: 200px;
 }
 
-.card_main_container {
+img {
+  border-radius: 8px;
+  width: 90px;
+  height: 130px;
+}
+
+div.card_main_container {
   display: flex;
   border-radius: 10px;
   width: 400px;
   height: 200px;
-  background: linear-gradient(#0d1117, #161d28);
+  background: linear-gradient(#0d1117 75%, #161d28 140%);
 }
 
-.header_container {
+div.header_container {
   position: absolute;
   display: inline-flex;
   width: 270px;
@@ -19,34 +26,34 @@ body {
   margin-left: 20px;
   font-family: 'Radio Canada', monospace;
   font-size: 12px;
-  color: #aeb8fe;
+  color: #58a6ff;
 }
 
-.progress_container {
+div.progress_container {
   position: absolute;
   width: 60px;
   height: 20px;
-  left: 300px;
+  margin-left: 280px;
   margin-top: 10px;
   font-family: 'Radio Canada', monospace;
   font-size: 14px;
-  color: #aeb8fe;
+  color: #58a6ff;
   text-align: right;
 }
 
-.logo_container {
+div.logo_container {
   position: absolute;
   width: 20px;
   height: 20px;
   margin-top: 10px;
-  left: 370px;
-  background: url(bookmate_logomark1.png);
+  margin-left: 365px;
+  background: url(bookmate_logomark20_20.png);
   background-position: right;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
-.author_container {
+div.author_container {
   position: absolute;
   display: inline-flex;
   width: 270px;
@@ -58,25 +65,32 @@ body {
   color: #33415c;
 }
 
-.text_container {
+div.separator_line {
+  position: absolute;
+  display: inline-flex;
+  width: 220px;
+  height: 2px;
+  margin-top: 57px;
+  margin-left: 20px;
+  border-top: 1px solid #1b222e;
+}
+
+div.text_container {
   position: absolute;
   display: inline-flex;
   width: 250px;
   height: 100px;
   margin-top: 75px;
   margin-left: 20px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 16px;
-  color: #aeb8fe;
+  color: #58a6ff;
 }
 
-.cover_container {
+div.cover_container {
   position: absolute;
   width: 90px;
   height: 130px;
   margin-top: 50px;
-  left: 300px;
-  background: url(91oK.jpg);
-  background-repeat: no-repeat;
-  background-size: 90px 130px;
+  margin-left: 295px;
 }
