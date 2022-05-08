@@ -2,45 +2,12 @@ body {
   background-color: #0d1117;
 }
 
-img {
-  width: 170px;
-  height: 260px;
-  margin-top: -25px;
-  margin-left: 40px;
-  -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,4.0)), to(rgba(0,0,0,0)));
-  -webkit-mask-size: 400%;
-}
-
 div.card_main_container {
   display: flex;
   border-radius: 10px;
   width: 400px;
   height: 200px;
   background: linear-gradient(#0d1117 75%, #161d28 140%);
-}
-
-div.header_container {
-  position: absolute;
-  display: inline-flex;
-  width: 270px;
-  height: 20px;
-  margin-top: 15px;
-  margin-left: 48px;
-  font-family: 'Radio Canada', monospace;
-  font-size: 14px;
-  color: #58a6ff;
-}
-
-div.progress_container {
-  position: absolute;
-  width: 30px;
-  height: 20px;
-  margin-left: 225px;
-  margin-top: 15px;
-  font-family: 'Radio Canada', monospace;
-  font-size: 14px;
-  color: #58a6ff;
-  text-align: right;
 }
 
 div.logo_container {
@@ -53,6 +20,30 @@ div.logo_container {
   background-position: right;
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+div.header_container {
+  position: absolute;
+  display: inline-flex;
+  width: 270px;
+  height: 20px;
+  margin-top: 17px;
+  margin-left: 48px;
+  font-family: 'Radio Canada', monospace;
+  font-size: 14px;
+  color: #58a6ff;
+}
+
+div.progress_container {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  margin-left: 225px;
+  margin-top: 17px;
+  font-family: 'Radio Canada', monospace;
+  font-size: 14px;
+  color: #58a6ff;
+  text-align: right;
 }
 
 div.author_container {
@@ -72,7 +63,7 @@ div.separator_line {
   display: inline-flex;
   width: 235px;
   height: 2px;
-  margin-top: 57px;
+  margin-top: 59px;
   margin-left: 20px;
   border-top: 1px solid #1b222e;
 }
@@ -82,7 +73,7 @@ div.quote {
   display: inline-flex;
   width: 20px;
   height: 20px;
-  margin-top: 60px;
+  margin-top: 65px;
   margin-left: 20px;
   font-family: 'Archivo Black', sans-serif;
   font-size: 36px;
@@ -109,4 +100,13 @@ div.cover_container {
   height: 200px;
   margin-left: 200px;
   overflow: hidden;
+}
+
+img {
+  width: 170px;
+  height: 260px;
+  margin-top: -25px;
+  margin-left: 40px;
+  -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,4.0)), to(rgba(0,0,0,0)));
+  -webkit-mask-size: 400%;
 }
