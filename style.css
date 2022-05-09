@@ -107,6 +107,6 @@ img {
   height: 260px;
   margin-top: -25px;
   margin-left: 40px;
-  -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,4.0)), to(rgba(0,0,0,0)));
-  -webkit-mask-size: 400%;
+  -webkit-mask-image: linear-gradient(to right, transparent 25%, black 500%);
+  mask-image: linear-gradient(to right, transparent 25%, black 500%);
 }
