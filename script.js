@@ -6,36 +6,36 @@
 // const url = "https://bookmate.com" + container.querySelector("a").getAttribute("href");
 // const excerption = document.getElementsByClassName("tni")[2].innerText;
 //
-// headers = ["Title","Author","Progress","Cover","Url","Excerption"]
-// bookAttributes = [title,author,status,cover,url,excerption];
-// bookData = {};
+// headers = ["title","author","progress","cover","url","excerption"]
+// book_attributes = [title,author,status,cover,url,excerption];
+// book_data = {};
 // for (var i = 0; i < headers.length; i++) {
-//   bookData[headers[i]] = bookAttributes[i]
+//   book_data[headers[i]] = book_attributes[i]
 // };
 //
-// console.log(bookData)
+// console.log(book_data)
 
-bookData = {
-  Title: 'To Sleep in a Sea of Stars',
-  Author: 'Christopher Paolini',
-  Progress: '8%',
-  Cover: 'https://assets1.bmstatic.com/assets/books-covers/97/5c/ipad-e5265287f0737e5e462bb046bc663305.jpeg',
-  Url: 'https://bookmate.com/reader/saTDRM1P?resource=book',
-  Excerption: 'Kira fell to the floor, screaming. The pain was all-consuming. That much she was aware of. It was the only thing she was aware of.'
+book_data = {
+  title: 'To Sleep in a Sea of Stars',
+  author: 'Christopher Paolini',
+  progress: '8%',
+  cover: 'https://assets1.bmstatic.com/assets/books-covers/97/5c/ipad-e5265287f0737e5e462bb046bc663305.jpeg',
+  url: 'https://bookmate.com/reader/saTDRM1P?resource=book',
+  excerption: 'Kira fell to the floor, screaming. The pain was all-consuming. That much she was aware of. It was the only thing she was aware of.'
 }
 
-var bookTitle = document.querySelector('.header_container');
-var bookAuthor = document.querySelector('.author_container');
-var bookExcerption = document.querySelector('.text_container');
-var bookProgress = document.querySelector('.progress_container');
-var bookCover = document.querySelector('.cover_container');
+var book_title = document.querySelector('.header_container');
+var book_author = document.querySelector('.author_container');
+var book_excerption = document.querySelector('.text_container');
+var book_progress = document.querySelector('.progress_container');
+var book_cover = document.querySelector('.cover_container');
 var quote = document.querySelector('.quote');
 var img = document.createElement("img");
-img.src = bookData["Cover"];
+img.src = book_data["cover"];
 
-bookTitle.textContent = bookData["Title"];
-bookAuthor.textContent = (`by ${bookData["Author"]}`);
-bookProgress.textContent = bookData["Progress"];
-bookExcerption.textContent = (`\xa0\xa0\xa0\xa0\xa0\ ${bookData["Excerption"]}`);
+book_title.textContent = book_data["title"];
+book_author.textContent = (`by ${book_data["author"]}`);
+book_progress.textContent = book_data["progress"];
+book_excerption.textContent = (`\xa0\xa0\xa0\xa0\xa0\ ${book_data["excerption"]}`);
 quote.textContent = "”";
-bookCover.appendChild(img);
+book_cover.appendChild(img);
